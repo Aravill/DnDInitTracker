@@ -11,7 +11,6 @@ const Path = require('path');
 const URL = require('url');
 
 var mainWin;
-var aboutWin;
 
 // Advanced logging function
 function log(colourCode, toLog) {

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/lux.css">
+  <title>Initiative Tracker</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Initiative Tracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </br>
+  <div class="container">
+    <div class="row">
+      <h1>About Initiative Tracker</h1>
+      <p>
+        I, the mighty Aravill, needed a simple little tool to use to track the initiative of my players and monsters during combat in DnD. I also wanted to learn to use NodeJS Electron and Bootstrap frameworks, Voila - creation of this app.
+      </p>
+      <p>
+        Right now this app will only support simple initiative tracking - a list of initiative that the user can cycle through (first element becomes last), addition new players/monsters to this list and giving them descriptions. If I ever find the time and will,
+        I will add more quality-of-life features like tracking HP and actions.
+      </p>
+      <p>
+        Below you can find my progress tracking cards (i also made them to practice editing with DOM)
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Task</div>
+          <div class="card-body">
+            <h4 class="card-title">Add Initiative List</h4>
+            <p class="card-text">Add initative tracking list to the main window and three buttons: Create, Remove, Edit</p>
+          </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+          <div class="card-header">Task</div>
+          <div class="card-body">
+            <h4 class="card-title">Color Change</h4>
+            <p class="card-text">Make these cards change color depending if their "Task" or "Done" and make double clicking them change the status</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Task</div>
+          <div class="card-body">
+            <h4 class="card-title">Add/Remove/Edit tasks</h4>
+            <p class="card-text">Make these cards editable using three buttons on the side, like a little task list, this will be identical to the initiative elements on the main page</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+          <div class="card-header">Task</div>
+          <div class="card-body">
+            <h4 class="card-title">Create a task database</h4>
+            <p class="card-text">Make these tasks load from a database like mongo instead of being hardcoded</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.$ = window.jQuery = require('../node_modules/jquery/dist/jquery.min');
+  </script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>
