@@ -1,0 +1,20 @@
+{
+  "name": "initiativetracker",
+  "version": "1.0.0",
+  "description": "Aravill's D&D initiative tracker for a DM",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./app/main.js"
+  },
+  "author": "Michal Mozik (Aravill)",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "dateformat": "^3.0.3",
+    "electron": "^1.8.4",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "tether": "^1.4.4"
+  }
+}
